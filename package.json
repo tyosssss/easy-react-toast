@@ -1,0 +1,33 @@
+{
+  "name": "easy-react-toast",
+  "version": "0.0.1",
+  "description": "toast ui component for react",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tyosssss/easy-react-toast.git"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "toast",
+    "ui"
+  ],
+  "author": "tyosssss@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tyosssss/easy-react-toast/issues"
+  },
+  "homepage": "https://github.com/tyosssss/easy-react-toast#readme",
+  "devDependencies": {
+    "prettier": "1.12.1",
+    "webpack": "4.8.3"
+  }
+}
