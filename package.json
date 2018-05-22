@@ -8,6 +8,8 @@
     "test": "test"
   },
   "scripts": {
+    "build": "node ./scripts --build",
+    "start": "node ./scripts --start",
     "test": "jest"
   },
   "repository": {
@@ -27,12 +29,23 @@
   },
   "homepage": "https://github.com/tyosssss/easy-react-toast#readme",
   "devDependencies": {
+    "babel-core": "6.26.3",
+    "babel-loader": "7.1.4",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-preset-env": "1.7.0",
+    "babel-preset-react": "6.24.1",
+    "css-loader": "0.28.11",
+    "less": "3.0.4",
+    "less-loader": "4.1.0",
     "prettier": "1.12.1",
-    "webpack": "4.8.3"
+    "react-dom": "^16.3.2",
+    "style-loader": "0.21.0",
+    "webpack": "4.8.3",
+    "webpack-merge": "4.1.2"
   },
   "dependencies": {
-    "classnames": "^2.2.5",
-    "prop-types": "^15.6.1",
-    "react": "^16.3.2"
+    "classnames": "2.2.5",
+    "prop-types": "15.6.1",
+    "react": "16.3.2"
   }
 }
