@@ -16,12 +16,12 @@ class Toast extends Component {
     let positionStyle = this.createPositionStyle(position)
 
     className = classNames(CLASS_NAME, className)
-    style = style
-      ? Object.assign(positionStyle, style)
-      : positionStyle
+    style = style ? Object.assign(positionStyle, style) : positionStyle
 
     return (
-      <div className={className} style={style} {...others}>{children}</div>
+      <div className={className} style={style} {...others}>
+        {children}
+      </div>
     )
   }
 
@@ -57,8 +57,8 @@ Toast.propTypes = {
 }
 
 Toast.defaultProps = {
-  position: POS_BOTTOM,
-  children: DEFAULT_CONTENT
+  position:       POS_BOTTOM,
+  children:       DEFAULT_CONTENT
 }
 
 export default Toast

@@ -7,7 +7,11 @@
     "example": "examples",
     "test": "test"
   },
+  "lint-staged": {
+    "*.{js,json,css,less,md}": ["prettier --write", "git add"]
+  },
   "scripts": {
+    "precommit": "lint-staged",
     "build": "node ./scripts --build",
     "start": "node ./scripts --start",
     "test": "jest"
@@ -16,12 +20,7 @@
     "type": "git",
     "url": "git+https://github.com/tyosssss/easy-react-toast.git"
   },
-  "keywords": [
-    "react",
-    "react-component",
-    "toast",
-    "ui"
-  ],
+  "keywords": ["react", "react-component", "toast", "ui"],
   "author": "tyosssss@gmail.com",
   "license": "MIT",
   "bugs": {
@@ -35,8 +34,12 @@
     "babel-preset-env": "1.7.0",
     "babel-preset-react": "6.24.1",
     "css-loader": "0.28.11",
+    "eslint": "^4.19.1",
+    "eslint-plugin-react": "^7.8.2",
+    "husky": "^0.14.3",
     "less": "3.0.4",
     "less-loader": "4.1.0",
+    "lint-staged": "^7.1.2",
     "prettier": "1.12.1",
     "react-dom": "^16.3.2",
     "style-loader": "0.21.0",
