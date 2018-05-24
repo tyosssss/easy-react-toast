@@ -27,4 +27,4 @@ module.exports = {
     'react/no-deprecated': ['error']
   },
   plugins: ['react']
-};
+}

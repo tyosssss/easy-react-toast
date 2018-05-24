@@ -8,8 +8,8 @@
     "test": "test"
   },
   "lint-staged": {
-    "*.{js,json,css,less,md}": ["prettier --write", "git add"],
-    "*.js": ["eslint --fix", "git add"]
+    "*.{json,css,less,md}": ["prettier --write"],
+    "*.js": ["eslint --fix"]
   },
   "scripts": {
     "precommit": "lint-staged",
